@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Changa:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{  
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.all-btn:link,
+.all-btn:visited{
+    padding: 10px 20px;
+    display: inline-block;
+    background-image: linear-gradient(45deg,rgb(112, 2, 202),rgb(159, 52, 247));
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    margin: 15px 10px;
+    transition: background-image .5s;
+}
+.all-btn:hover{
+    background-image: linear-gradient(45deg,rgb(159, 52, 247),rgb(112, 2, 202));
+}
+
+.unique-color{
+    color: slateblue;
+}
+
+.section{
+    display: flex;
+    width: 80%;
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.intro-section{
+    margin-top: 90px;
+}
+
+
+.title{
+    margin: 20px 10px;
+    padding:10px 15px ;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 5px;
+    font-family: 'Changa', sans-serif;
+}
+
+.intro-title{
+    font-size: 35px;
+    border-left: 4px solid;
+    border-image: linear-gradient(rgba(57, 231, 66, 0.933),rgb(82, 7, 126));
+    border-image-slice: 1;
+}
+.intro-para p{
+    margin:0 10px;
+    font-size: 20px;
+    line-height: 35px;
+
+}
+.left-section{
+    width: 70%;
+}
+.right-section{
+    width: 30%;
+}
+
+.intro-section-extra-para{
+    margin: 10px 10px;
+    font-size: 18px;
+}
+
+.intro-right-section img{
+    width: 350px;
+    height: auto;
+    margin-top: -80px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Mission Section */
+.mission-22{
+    margin-top: 80px;
+}
+
+
+.mission{
+    margin: 30px;
+    padding: 15px;
+    background-color: rgba(0, 255, 128, 0.507);
+    border-radius: 30px;
+    width: 350px;
+    transition: all .5s;
+}
+.mission:hover{
+transform: translateY(-5px);
+}
+
+.mission-22-title{
+font-size: 24px;
+text-align: center;
+margin-bottom: -15px;
+}
+
+.mission img{
+    width: 150px;
+    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.mission h3{
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-family: "Acme";
+    text-transform: uppercase;
+}
+
+.mission p{
+    text-align: center;
+    font-size: 15px;
+}
+.mission-card-bg1{
+    background-color: rgba(76, 250, 163, 0.507);
+}
+.mission-card-bg2{
+    background-color: rgba(248, 83, 221, 0.507);
+}
+.mission-card-bg3{
+    background-color: rgba(241, 252, 92, 0.404);
+}
+
+/* DEVELOPER SECTION */
+
+.developer-img img{
+    width: 350px;
+    height: auto;
+    margin: 10px 25px;
+}
+
+.developer-summery{
+margin-left: 20px;
+}
+.developer-summery h2{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.developer-summery p{
+    margin-left: 10px;
+    line-height: 30px;
+}
+.shape-overlay img{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 70px;
+    z-index: -1;
+    left: -60px;
+}
+.shape-overlay-2 img{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 300px;
+    z-index: -1;
+    right: -15px;
+}
+
+/* Our Team*/
+.team-section{
+    justify-content: space-around;
+    width: 70%;
+
+}
+
+.team-heading{
+    text-align: center;
+    font-family: 'Acme';
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+.team-member img{
+    width: 100px;
+    height: 120px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.team-member h4{
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin:5px 0;
+}
+.team-member p{
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team-member{
+    padding: 10px;
+    width: 230px;
+}
+/* FOOTER */
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: darkblue;
+   text-align: center;
+   padding: 20px 0;
+}
+footer h2{
+    font-family: 'Acme';
+    color: rgb(177, 172, 172);
+    font-size: 30px;
+    margin: 10px;
+}
+footer p{
+    color: whitesmoke;
+}
+.unique-col-2{
+    color: darkorange;
+}
