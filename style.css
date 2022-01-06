@@ -37,7 +37,7 @@ a{
     margin-top: 20px;
     margin-bottom: 80px;
     position: relative;
-    transform: translateX(-50%);
+    transform: translateX(-52%);
 }
 
 .intro-section{
@@ -62,7 +62,7 @@ a{
 }
 .intro-para p{
     margin:0 10px;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 35px;
 
 }
@@ -181,11 +181,20 @@ margin-left: 20px;
     right: -15px;
 }
 
-/* Our Team*/
-.team-section{
-    justify-content: space-around;
-    width: 70%;
+/* Our Team & Contact Form*/
 
+.our-team{
+    width: 50%;
+    /* background-color: darkgoldenrod; */
+}
+.team-section{
+    width: 90%;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-left:50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    flex-flow: wrap;
 }
 
 .team-heading{
@@ -194,14 +203,22 @@ margin-left: 20px;
     font-weight: 400;
     letter-spacing: 5px;
     font-size: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 .team-member img{
+    position: absolute;
     width: 100px;
-    height: 120px;
-    margin-left: 50%;
+    height: 110px;
+    top: -60px;
     transform: translateX(-50%);
+    left: 50%;
+}
+.name-position{
+    position: absolute;
+    top: 60px;
+    width: 90%;
+    text-align: center;
 }
 .team-member h4{
     font-weight: 300;
@@ -216,13 +233,96 @@ margin-left: 20px;
 }
 
 .team-member{
+    position: relative;
+    margin: 10px;
+    margin-top: 80px;
     padding: 10px;
-    width: 230px;
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 0 22px rgba(160, 159, 159, 0.4);
+    transition: all .5s;
 }
+.team-member:hover{
+    transform: translateY(-5px);
+}
+.team-member-bg-1{
+    background-color: rgba(216, 129, 250, 0.534);
+}
+.team-member-bg-2{
+    background-color: rgba(109, 187, 246, 0.705);
+}
+.team-member-bg-3{
+    background-color: rgba(119, 241, 215, 0.534);
+}
+.team-member-bg-4{
+    background-color: rgba(109, 246, 171, 0.705);
+}
+.team-member-bg-5{
+    background-color: rgba(252, 250, 150, 0.705);
+}
+
+
+.social-media{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.social-media a {
+    color: #055a7cb6;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: 0.3s;
+  }
+  
+.social-media a:hover {
+    color: #0383b6b6;
+  }
+.contact-us-section{
+    width: 50%;
+    position: relative;
+}
+.contact-form{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    
+}
+.contact-us-section h4{
+    font-family: 'Acme';
+    font-weight: 400;
+    margin-left: 15px;
+    color: rgb(190, 8, 214);
+    letter-spacing: 5px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.contact-form input{
+    height: 50px;
+   
+    
+    /* background-color: rgba(230, 181, 84, 0.596); */
+}
+.contact-form textarea{
+    height: 180px;
+}
+.input-msg{
+    display: block;
+    padding: 5px;
+    margin:35px 15px;
+    width: 80%;   
+    /* border-radius: 10px; */
+    outline: none;
+    border: none;
+    font-family: 'Poppins';
+    border-bottom: 3px solid rgb(198, 17, 253);
+    border-top: 1px solid rgb(198, 17, 253);
+}
+
 /* FOOTER */
 
 footer{
-    height: 200px;
+    height: 150px;
     width: 100%;
     background-color: darkblue;
    text-align: center;
